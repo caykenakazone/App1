@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function countWords(str) {
+        const arr = str.split(' ');
+        return arr.filter(word => word !== '').length;
+        }
+        window.alert('Bem-vindo');
+        nome = window.prompt('Insira seu nome abaixo:');
+        contador = countWords(nome)
+        
+        document.write("<p>Seu nome possui "+nome.length+" caracteres</p>");
+        document.write("<p>A primeira letra do seu nome é  "+nome.charAt(0)+("</p>"));
+        document.write("<p>Seu nome convertido para letras maiúsculas:  "+nome.toUpperCase()+("</p>"));
+        document.write("<p>Seu nome tem "+contador+(" palavras</p>"));
+        document.write('<p>Seu nome <span style="color:red;">'+nome+("</span> na cor Vermelho</p>"));
+        document.write('<p> Seu nome escrito 5 vezes na cor azul: <ul style="color: blue;"> <li>'+nome+'</li><li>'+nome+'</li><li>'+nome+'</li><li>'+nome+'</li><li>'+nome+'</li></ul>')        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
